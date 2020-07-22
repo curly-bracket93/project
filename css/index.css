@@ -1,0 +1,169 @@
+/*body {
+    max-width:1520px;
+    font-size: 100%;
+    margin:auto;
+}
+nav ul {
+    display:flex;
+    justify-content:start;
+
+}
+nav ul li {
+    border:2px solid black;
+    text-decoration:none;
+    align-items:center;
+    list-style-type:none;
+    display:flex;
+    justify-content:start;
+    flex-direction:row;
+    padding:15px 35px;
+    font-size:1.4rem;
+}
+li a {
+    text-decoration:none;
+}
+@media (max-width: 500px) {
+   nav ul li {
+        display: flex;   
+        align-items:start;     
+    }
+}
+*/
+body {
+    font-size:100%;
+    margin:auto;
+    max-width:1510px;
+    box-sizing: border-box;
+}
+.carousel-image {
+    height:100;
+    width:100%;
+    filter: brightness(80%);
+    opacity:0.8;
+}
+#most-popular-items-title {
+    padding:20px;
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    color:rgb(115, 38, 38);
+    font-size:2.2em;
+    font-weight:bold;
+}
+@media(min-width:540px) {
+    #most-popular-items {
+        display: grid;
+        grid-gap:5px;
+        grid-template-columns:1fr 1fr;
+        align-items:center;
+    }
+}
+
+@media (min-width:1000px) {
+    #most-popular-items {
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+
+#most-popular-items div {
+
+    padding:5px;
+    margin:5px;
+}
+#most-popular-items div:hover {
+    border:5px solid rgb(115, 38, 38);
+    border-radius:5%;
+}
+#most-popular-items div img {
+    width:100%;
+}
+@media(max-width:539px) {
+    #main-facts-about-us {
+        border:2px solid black;
+        display:grid;
+        grid-template-columns:1fr;
+
+    }
+}
+
+@media(min-width:540px) {
+    #main-facts-about-us {
+        border:2px solid black;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+#main-facts-about-us div{
+
+    margin:5px;
+    width:100%;
+    text-align:center;
+    color:white;
+}
+#main-facts-about-us {
+    margin:25px auto 25px auto;
+    background-image: url("../img/background-about-us-short.jpg");
+    padding:75px 5px;
+    background-size:auto;
+    filter: brightness(80%);
+    opacity:0.8;
+}
+
+@media(max-width:539px) {
+    #brands {
+        display:grid;
+        grid-gap:5px;
+        grid-template-columns:1fr 1fr;
+        align-items:center;
+    }
+}
+@media(min-width:540px) {
+    #brands {
+        display:grid;
+        grid-gap:5px;
+        grid-template-columns:1fr 1fr;
+        align-items:center;
+    }
+}
+@media (min-width:1000px) {
+    #brands {
+     grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+#brands div img {
+    width:70%;
+    margin:50px 3px;
+}
+#call-us {
+    display:flex;
+    flex-direction:column;
+    border:2px solid black;
+    justify-content:center;
+    text-align:center;
+    padding:75px 5px;
+    color:white;
+    background-image: url("../img/background-call-us.jpg");
+    background-size:auto;
+    filter: brightness(80%);
+    opacity:0.8;
+}
+@media(min-width:540px) {
+    #contacts-and-feedback-blocks {
+        display:grid;
+        grid-gap:5px;
+        grid-template-columns:1fr 1fr 1fr;
+        align-items:center;
+    }
+}
+#feedback-title {
+    display:grid;
+    align-self:center;
+}
+.contacts-titles {
+    color: rgb(115, 38, 38);
+    font-size:1.6em;
+    font-weight:bold;
+}
+#contact-info {
+    font-size:2em;
+}
