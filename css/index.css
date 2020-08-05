@@ -8,7 +8,7 @@ body {
 .navbar {
     font-family: 'Lemonada', cursive;
     font-weight:500;
-    
+    max-width:1500px;
 }
 .carousel-caption {
     font-family: 'Lemonada', cursive;
@@ -97,8 +97,8 @@ h1+p {
     }
 }
 #main-facts-about-us div{
-
     margin:5px;
+    max-width:100%;
     width:100%;
     text-align:center;
     color:white;
@@ -160,6 +160,7 @@ h1+p {
 #footer {
     background-color:rgb(115, 38, 38);
     color: #cccccc;
+    max-width:1500px;
 }
 .contact-and-ask-titles {
     font-size:2.5rem;
@@ -176,8 +177,8 @@ h1+p {
   padding:10px;
   margin:7px;
   border-radius:10px;
-  width:25em;
-  border-color:rgb(171, 87, 83);;
+  width:100%;
+  border-color:rgb(171, 87, 83);
 }
 .input-field:focus {
   border-color:rgb(115, 38, 38);
@@ -193,4 +194,7 @@ h1+p {
 }
 #leave-message {
     margin-bottom:50px;
+}
+#google-maps {
+    width:100%;
 }
