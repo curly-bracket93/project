@@ -16,18 +16,7 @@
 <body>
   <main>
     <header>
-      <!-- <nav>
-      <ul>
-        <li><a href="index.html">Головна</a></li>
-        <li><a href="products.html">Продукти</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакти</a></li>
-        <li><a href="about-us.html">Про Нас</a></li>
-        <li><a href="shopping-cart.html">Кошик</a></li>
-      </ul>
-    </nav>-->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-width container"
-        style="background-color: rgba(115, 38, 38, 0.5);">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-width container">
         <a class="navbar-brand" href="#">Chocolate Paradise</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,13 +118,13 @@
         <a href="#">
           <img src="img/kit-kat-mini.jpg" alt="kit-kat mini chocolate bars" />
         </a>
-        <p>Батончики KitKat</p>
-        <div class="row>">
-          <div class="col-sm-6">
-            <p>150 грн</p>
+        <p class="paragraph-price-and-buy">Батончики KitKat</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">150 грн</p>
           </div>
-          <div class="col-sm-6">
-            <button>Купити</button>
+          <div>
+            <button class="btn-buy">Купити</button>
           </div>
         </div>
       </div>
@@ -143,22 +132,43 @@
         <a href="#">
           <img src="img/kinder-candies.jpg" alt="kinder candies" />
         </a>
-        <p>Цукерки Kinder</p>
-        <p>108 грн</p>
+        <p class="paragraph-price-and-buy">Цукерки Kinder</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">108 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
       </div>
       <div>
         <a href="#">
           <img src="img/milka-candies.jpg" alt="milka candies" />
         </a>
-        <p>Цукерки Milka</p>
-        <p>142 грн</p>
+        <p class="paragraph-price-and-buy">Цукерки Milka</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">142 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
       </div>
       <div>
         <a href="#">
           <img src="img/toblerone-candies.jpg" alt="toblerone-candies" />
         </a>
-        <p>Цукерки Toblerone 744г</p>
-        <p>370 грн</p>
+        <p class="paragraph-price-and-buy">Цукерки Toblerone 744г</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">370 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
       </div>
     </div>
     <div id="main-facts-about-us">
@@ -247,28 +257,30 @@
           <p>
             Якщо у Вас є питання, пропозиції чи зауваження, заповніть форму
             нижче і ми зв'яжемося з Вами</p>
-          <form action="#" method="POST" class="mt-5">
-            <label for="name">
-              <input class="input-field" type="text" id="name" placeholder="Ім'я" required>
-            </label>
-            <br>
-            <label for="phone-number">
-              <input class="input-field" type="tel" id="phone-number" placeholder="Номер телефону" required>
-            </label>
-            <br>
-            <label for="email">
-              <input class="input-field" type="email" id="email" placeholder="Адреса електронної пошти" required>
-            </label>
-            <br>
-            <label for="leave-message">
-              <input class="input-field" type="text" id="leave-message" placeholder="Залиште повідомлення" required>
-              <br>
-            </label>
-            <br>
-            <label for="submit-form">
-              <input class="input-field" type="button" id="submit-form" value="Надіслати">
-            </label>
-          </form>
+          <form>
+            <div class="form-group my-2">
+              <label for="first-name"></label>
+              <input type="text" class="form-control" id="first-name" placeholder="Ім'я" required>
+            </div>
+            <div class="form-group my-2">
+              <label for="last-name"></label>
+              <input type="text" class="form-control" id="last-name" placeholder="Прізвище" required>
+            </div>
+            <div class="form-group my-2">
+              <label for="phone-number"></label>
+              <input type="tel" class="form-control" id="phone-number" placeholder="Номер телефону" required>
+            </div>
+            <div class="form-group my-2">
+              <label for="email-address"></label>
+              <input type="email" class="form-control" id="email-address" placeholder="Адреса електронної пошти"
+                required>
+            </div>
+            <div class="form-group my-2">
+              <label for="leave-a-message"></label>
+              <input type="text" class="form-control mb-5" id="leave-a-message" placeholder="Залиште повідомлення"
+                required>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Надіслати</button>
           </form>
         </div>
       </div>
