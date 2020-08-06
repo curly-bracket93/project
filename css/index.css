@@ -1,3 +1,4 @@
+/*MAIN PAGE STYLES BELOW*/
 body {
     font-size:100%;
     margin:auto;
@@ -21,6 +22,9 @@ body {
 .carousel-caption {
     font-family: 'Lemonada', cursive;
     font-weight:700;
+    font-size:100%;
+    position: absolute;
+    top:230px;
 }
 .carousel-image {
     height:100%;
@@ -28,10 +32,7 @@ body {
     filter: brightness(80%);
     opacity:0.8;
 }
-.carousel-caption {
-   position: absolute;
-   top:230px;
-}
+/* buttons do not work properly with <a> tag so it will not be used in this project
 .button {
   background-color: rgb(171, 87, 83);
   border: none;
@@ -46,6 +47,11 @@ body {
       font-size:1.1rem;
       transition:0.3s;
 }
+.button a {
+    color:white;
+    text-decoration:none;
+}
+*/
 h1 {
     font-size:5rem;
 }
@@ -60,7 +66,6 @@ h1+p {
     color:rgb(115, 38, 38);
     font-size:2.2em;
     font-weight:bold;
-
 }
 @media(min-width:540px) {
     #most-popular-items {
@@ -218,6 +223,7 @@ h1+p {
         justify-content:center;
         font-size:1.2rem;
         font-weight:500;
+        text-align:center;
     }
 .price-and-buy {
         display:flex;
@@ -242,4 +248,95 @@ h1+p {
 }
 #google-maps {
     border:0; 
+}
+/*PRODUCTS PAGE STYLES BELOW*/
+#categories-title {
+    padding:50px 20px 0 20px;
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    color:rgb(115, 38, 38);
+    font-size:2.2em;
+    font-weight:bold;
+}
+@media(min-width:540px) {
+    .categories-and-products {
+        display: grid;
+        grid-gap:5px;
+        grid-template-columns:1fr 1fr;
+        align-items:center;
+    }
+}
+
+@media (min-width:1000px) {
+    .categories-and-products {
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+
+.categories-and-products div {
+    
+    padding:5px;
+    margin:5px;
+}
+.categories-and-products>div:hover {
+    box-sizing: border-box;
+    border:5px hidden rgb(115, 38, 38);
+    border-radius:5%;
+}
+.categories-and-products div img {
+    width:100%;
+}
+#all-items-title {
+    padding:50px 20px 20px 20px;
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    color:rgb(115, 38, 38);
+    font-size:1.8em;
+    font-weight:bold;
+}
+/*DELIVERY PAGE STYLES BELOW*/
+#delivery-title {
+    padding:50px 20px 0 20px;
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    color:rgb(115, 38, 38);
+    font-size:2.2em;
+    font-weight:bold;
+}
+#delivery-image {
+    width:100%;
+}
+ul {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+ul>li {
+    margin:5px;
+}
+/*CONTACTS PAGE STYLES BELOW*/
+#contacts-title {
+    padding:50px 20px 0 20px;
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    color:rgb(115, 38, 38);
+    font-size:2.2em;
+    font-weight:bold;
+}
+/*ABOUT-US PAGE STYLES BELOW*/
+#about-us-title {
+    padding:50px 20px 0 20px;
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    color:rgb(115, 38, 38);
+    font-size:2.2em;
+    font-weight:bold;
+}
+#about-us-image {
+    width:100%;
 }

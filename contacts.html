@@ -1,63 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/site-logo.png">
-	<title>Chocolate Paradise</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="img/site-logo.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="js/index.js" defer></script>
+  <title>Chocolate Paradise</title>
 </head>
 
 <body>
-	<main>
-		<nav>
-			<ul>
-				<li><a href="index.html">Головна</a></li>
-				<li><a href="products.html">Продукти</a></li>
-				<li><a href="delivery.html">Доставка</a></li>
-				<li><a href="contacts.html">Контакти</a></li>
-				<li><a href="about-us.html">Про Нас</a></li>
-				<li><a href="shopping-cart.html">Кошик</a></li>
-			</ul>
-		</nav>
-		<div id="contacts">
-			<p id="contact-info">Контактна інформація</p>
-			<p class="contacts-titles">Адреса</p>
-			<p class="contacts-details">Івано-Франківськ, вул. Незалежності 81</p>
-			<p class="contacts-titles">Години роботи</p>
-			<p class="contacts-details">Понеділок - П'ятниця: 9:00 - 17:00</p>
-			<p class="contacts-titles">Контакти</p>
-			<p class="contacts-details">+380 123456789<br>chocolate-paradise@email.com</p>
-				<!--Google Map with a marker will be here-->
-		</div>
-		<div id="feedback">
-			<p id="feeback-title">Надіслати питання</p>
-			<p id="feedback-description">Якщо у Вас є питання, пропозиції чи зауваження, заповніть форму нижче і ми
-				зв'яжемося
-				з Вами</p>
-			<form action="#" method="POST">
-				<label for="name">
-                    <input type="text" id="name" placeholder="Ім'я" required><br>
-                </label>
-				<label for="phone-number">
-                    <input type="tel" id="phone-number" placeholder="Номер телефону" required><br>
-                </label>
-				<label for="email">
-                    <input type="email" id="email" placeholder="Адреса електронної пошти" required><br>
-                </label>
-				<label for="leave-message">
-                    <input type="text" id="leave-message" placeholder="Залиште повідомлення" required><br>
-                </label>
-				<label for="submit-form">
-                    <input type="button" id="submit-form" value="Надіслати">
-                </label>
-			</form>
-		</div>
-	</main>
-	<footer>
-		<p>© Created by Volodymyr Prokopenko</p>
-		<p>All rights Reserved</p>
-	</footer>
+  <main>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-width container">
+        <a class="navbar-brand" href="index.html">Chocolate Paradise</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                Головна <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="products.html">
+                Продукти <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="delivery.html">
+                Доставка <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contacts.html">
+                Контакти <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about-us.html">
+                Про Нас <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                Кошик <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <p id="contacts-title">Контакти</p>
+    <div class="container">
+      <!--container for contact information and contact us feedback form-->
+      <div class="row pb-5 mt-5">
+        <div class="col-md-6">
+          <div class="row">
+            <!--row inside another row-->
+            <div class="col-sm-12 text-center">
+              <p class="contact-and-ask-titles">Контактна інформація</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <p class="contacts-titles">Адреса</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <p>Івано-Франківськ, вул. Незалежності 81</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <p class="contacts-titles">Години роботи</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <p>Понеділок - П'ятниця: 9:00 - 17:00</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <p class="contacts-titles">Контакти</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <p>+380 123456789<br>chocolate-paradise@email.com</p>
+            </div>
+          </div>
+          <iframe id="google-maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.827206910122!2d24.716380551019473!3d48.918684279191815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c1693df23101%3A0x5857da830da1d4d8!2sNezalezhnosti%20St%2C%2081%2C%20Ivano-Frankivs&#39;k%2C%20Ivano-Frankivs&#39;ka%20oblast%2C%2076000!5e0!3m2!1sen!2sua!4v1596616558506!5m2!1sen!2sua"
+            width="550" height="400" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <!--Google Map with a marker will be here-->
+        </div>
+        <div class="col-md-6 text-center form-bg">
+          <div class="row">
+            <!--row inside another row-->
+            <div class="col-sm-12">
+              <p class="contact-and-ask-titles">Надіслати<br>питання</p>
+            </div>
+          </div>
+          <p>
+            Якщо у Вас є питання, пропозиції чи зауваження, заповніть форму
+            нижче і ми зв'яжемося з Вами</p>
+          <form>
+            <div class="form-group my-2">
+              <label for="first-name"></label>
+              <input type="text" class="form-control" id="first-name" placeholder="Ім'я" required>
+            </div>
+            <div class="form-group my-2">
+              <label for="last-name"></label>
+              <input type="text" class="form-control" id="last-name" placeholder="Прізвище" required>
+            </div>
+            <div class="form-group my-2">
+              <label for="phone-number"></label>
+              <input type="tel" class="form-control" id="phone-number" placeholder="Номер телефону" required>
+            </div>
+            <div class="form-group my-2">
+              <label for="email-address"></label>
+              <input type="email" class="form-control" id="email-address" placeholder="Адреса електронної пошти"
+                required>
+            </div>
+            <div class="form-group my-2">
+              <label for="leave-a-message"></label>
+              <input type="text" class="form-control mb-5" id="leave-a-message" placeholder="Залиште повідомлення"
+                required>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Надіслати</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer" class="mt-5">
+    <div class="container p-2">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>© Created by Volodymyr Prokopenko</p>
+        </div>
+        <div class="col-sm-6 text-right">
+          <p>All rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

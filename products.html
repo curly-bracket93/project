@@ -2,111 +2,396 @@
 <html lang="uk">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Продукти</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="img/site-logo.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="js/index.js" defer></script>
+  <title>Chocolate Paradise</title>
 </head>
 
 <body>
-	<main>
-		<nav>
-			<ul>
-				<li><a href="index.html">Головна</a></li>
-				<li><a href="products.html">Продукти</a></li>
-				<li><a href="delivery.html">Доставка</a></li>
-				<li><a href="contacts.html">Контакти</a></li>
-				<li><a href="about-us.html">Про Нас</a></li>
-				<li><a href="shopping-cart.html">Кошик</a></li>
-			</ul>
-		</nav>
-		<p>Категорії</p>
-		<div id="product-categories">
-			<a href="#"><img src="img/products/products-chocolate.jpg" alt="category-chocolate"></a>
-				<p>Шоколад</p>
-				<a href="#"><img src="img/products/products-candies.jpg" alt="category-candies"></a>
-					<p>Цукерки</p>
-					<a href="#"><img src="img/products/products-cookies.jpg" alt="category-cookies"></a>
-						<p>Печиво</p>
-						<a href="#"><img src="img/products/products-gum.jpg" alt="category-chewing gum"></a>
-							<p>Жувальна гумка</p>
-		</div>
-		<p id="all-items-title">Всі товари</p>
-		<div id="all-items">
-			<a href="#"><img src="img/products/chocolate/lindt-dark-almond.jpg"
-                    alt="lindt dark chocolate with almonds"></a>
-				<p>Чорний шоколад Lindt з миндалем</p>
-				<p>250 грн</p>
-				<a href="#"><img src="img/products/candies/kinder-candies.jpg" alt="kinder candies"></a>
-					<p>Цукерки Kinder</p>
-					<p>108 грн</p>
-					<a href="#"><img src="img/products/cookies/milka-tender-break.jpg" alt="milka candies"></a>
-						<p>Цукерки Milka Tender</p>
-						<p>150 грн</p>
-						<a href="#"><img src="img/products/gum/mentos-bubble.jpg" alt="mentos bubble gum"></a>
-							<p>Жувальна гумка Mentos Bubble Gum</p>
-							<p>110 грн</p>
-							<a href="#"><img src="img/products/cookies/oreo-pouch.jpg" alt="oreo pouch"></a>
-								<p>Печиво Oreo Pouch</p>
-								<p>220 грн</p>
-								<a href="#"><img src="img/products/candies/kit-kat-mini.jpg" alt="kit-kat mini"></a>
-									<p>Батончики Kit-Kat Mini</p>
-									<p>150 грн</p>
-									<a href="#"><img src="img/products/gum/mentos-mint.jpg" alt="kinder candies"></a>
-										<p>Жувальна гумка Mentos Mint</p>
-										<p>110 грн</p>
-										<a href="#"><img src="img/products/candies/milka-candies.jpg" alt="milka mix"></a>
-											<p>Цукерки Milka</p>
-											<p>142 грн</p>
-											<a href="#"><img src="img/products/candies/toblerone-candies.jpg" alt="toblerone candies"></a>
-												<p>Цукерки Toblerone</p>
-												<p>260 грн</p>
-												<a href="#"><img src="img/products/cookies/hersheys.jpg" alt="hershey's cookies"></a>
-													<p>Цукерки Hershey's</p>
-													<p>120 грн</p>
-													<a href="#"><img src="img/products/gum/ice-breaker-peppermint.jpg" alt="ice-breaker-peppermint"></a>
-														<p>Жувальна гумка Ice Breaker Peppermint</p>
-														<p>106 грн</p>
-														<a href="#"><img src="img/products/chocolate/milka-oreo.jpg" alt="chocolate milka-oreo"></a>
-															<p>Шоколад Milka-Oreo</p>
-															<p>150 грн</p>
-															<a href="#"><img src="img/products/cookies/milka-choco-grains.jpg" alt="milka-choco-grains"></a>
-																<p>Печиво Milka-Choco-Grains</p>
-																<p>135 грн</p>
-																<a href="#"><img src="img/products/chocolate/kinder-chocolate.jpg" alt="kinder chocolate"></a>
-																	<p>Шоколад Kinder </p>
-																	<p>68 грн</p>
-																	<a href="#"><img src="img/products/cookies/kisses.jpg" alt="cookies hershey's kisses"></a>
-																		<p>Печиво Kisses</p>
-																		<p>108 грн</p>
-																		<a href="#"><img src="img/products/gum/trident.jpg" alt="gum trident"></a>
-																			<p>Жувальна гумка Trident</p>
-																			<p>105 грн</p>
-																			<a href="#"><img src="img/products/chocolate/lindt-milk-hazelnut.jpg" alt="milk chocolate lindt with hazelnuts"></a>
-																				<p>Молочний шоколад Lindt з лісовими
-																					горіхами</p>
-																				<p>270 грн</p>
-																				<a href="#"><img src="img/products/candies/haribo.jpg" alt="candies haribo"></a>
-																					<p>Цукерки Haribo</p>
-																					<p>125 грн</p>
-																					<a href="#"><img src="img/products/cookies/oreo-chocolate-gift.jpg" alt="oreo-chocolate-gift"></a>
-																						<p>Печиво Oreo Chocolate Gift
-																						</p>
-																						<p>250 грн</p>
-																						<a href="#"><img src="img/products/chocolate/toblerone-fruit-nut.jpg" alt="toblerone-fruit-nut"></a>
-																							<p>Шоколад Toblerone Fruit &
-																								Nut</p>
-																							<p>250 грн</p>
-																							<a href="#"><img src="img/products/gum/ice-breaker-raspberry.jpg" alt="ice-breaker-raspberry"></a>
-																								<p>Жувальна гумка
-																									Ice-Breaker
-																									Raspberry</p>
-																								<p>110 грн</p>
-		</div>
-	</main>
-	<footer>
-		<p>© Created by Volodymyr Prokopenko</p>
-		<p>All rights Reserved</p>
-	</footer>
+  <main>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-width container">
+        <a class="navbar-brand" href="index.html">Chocolate Paradise</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                Головна <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="products.html">
+                Продукти <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="delivery.html">
+                Доставка <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contacts.html">
+                Контакти <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about-us.html">
+                Про Нас <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                Кошик <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <p id="categories-title">Категорії</p>
+    <div class="categories-and-products">
+      <div>
+        <a href="#"><img src="img/products/products-chocolate.jpg" alt="category-chocolate"></a>
+        <p class="paragraph-price-and-buy">Шоколад</p>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/products-candies.jpg" alt="category-candies"></a>
+        <p class="paragraph-price-and-buy">Цукерки</p>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/products-cookies.jpg" alt="category-cookies"></a>
+        <p class="paragraph-price-and-buy">Печиво</p>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/products-gum.jpg" alt="category-chewing gum"></a>
+        <p class="paragraph-price-and-buy">Жувальна гумка</p>
+      </div>
+    </div>
+    <p id="all-items-title">Всі товари</p>
+    <div class="categories-and-products">
+      <!--******************************************************************************************************-->
+      <div>
+        <a href="#"><img src="img/products/chocolate/lindt-dark-almond.jpg" alt="lindt dark chocolate with almonds"></a>
+        <p class="paragraph-price-and-buy">Чорний шоколад Lindt з миндалем</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">250 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/candies/kinder-candies.jpg" alt="kinder candies"></a>
+        <p class="paragraph-price-and-buy">Цукерки Kinder</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">108 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/cookies/milka-tender-break.jpg" alt="milka candies"></a>
+        <p class="paragraph-price-and-buy">Цукерки Milka Tender</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">150 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/gum/mentos-bubble.jpg" alt="mentos bubble gum"></a>
+        <p class="paragraph-price-and-buy">Жувальна гумка Mentos Bubble Gum</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">110 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/cookies/oreo-pouch.jpg" alt="oreo pouch"></a>
+        <p class="paragraph-price-and-buy">Печиво Oreo Pouch</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">220 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/candies/kit-kat-mini.jpg" alt="kit-kat mini"></a>
+        <p class="paragraph-price-and-buy">Батончики Kit-Kat Mini</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">150 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/gum/mentos-mint.jpg" alt="kinder candies"></a>
+        <p class="paragraph-price-and-buy">Жувальна гумка Mentos Mint</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">110 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/candies/milka-candies.jpg" alt="milka mix"></a>
+        <p class="paragraph-price-and-buy">Цукерки Milka</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">142 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/candies/toblerone-candies.jpg" alt="toblerone candies"></a>
+        <p class="paragraph-price-and-buy">Цукерки Toblerone</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">260 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/cookies/hersheys.jpg" alt="hershey's cookies"></a>
+        <p class="paragraph-price-and-buy">Печиво Hershey's</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">120 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/gum/ice-breaker-peppermint.jpg" alt="ice-breaker-peppermint"></a>
+        <p class="paragraph-price-and-buy">Жувальна гумка Ice Breaker Peppermint</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">106 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/chocolate/milka-oreo.jpg" alt="chocolate milka-oreo"></a>
+        <p class="paragraph-price-and-buy">Шоколад Milka-Oreo</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">150 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/cookies/milka-choco-grains.jpg" alt="milka-choco-grains"></a>
+        <p class="paragraph-price-and-buy">Печиво Milka-Choco-Grains</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">135 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/chocolate/kinder-chocolate.jpg" alt="kinder chocolate"></a>
+        <p class="paragraph-price-and-buy">Шоколад Kinder </p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">68 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/cookies/kisses.jpg" alt="cookies hershey's kisses"></a>
+        <p class="paragraph-price-and-buy">Печиво Kisses</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">108 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/gum/trident.jpg" alt="gum trident"></a>
+        <p class="paragraph-price-and-buy">Жувальна гумка Trident</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">105 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/chocolate/lindt-milk-hazelnut.jpg"
+            alt="milk chocolate lindt with hazelnuts"></a>
+        <p class="paragraph-price-and-buy">Молочний шоколад Lindt з лісовими горіхами</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">270 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/candies/haribo.jpg" alt="candies haribo"></a>
+        <p class="paragraph-price-and-buy">Цукерки Haribo</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">125 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/cookies/oreo-chocolate-gift.jpg" alt="oreo-chocolate-gift"></a>
+        <p class="paragraph-price-and-buy">Печиво Oreo Chocolate Gift</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">250 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/chocolate/toblerone-fruit-nut.jpg" alt="toblerone-fruit-nut"></a>
+        <p class="paragraph-price-and-buy">Шоколад Toblerone Fruit & Nut</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">250 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/gum/ice-breaker-raspberry.jpg" alt="ice-breaker-raspberry"></a>
+        <p class="paragraph-price-and-buy">Жувальна гумка Ice-Breaker Raspberry</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">110 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/chocolate/milka-biscuit.jpg" alt="milka-biscuit chocolate"></a>
+        <p class="paragraph-price-and-buy">Молочний шоколад Milka з печивом</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">150 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/candies/skittles.jpg" alt="candies-skittles"></a>
+        <p class="paragraph-price-and-buy">Цукерки Skittles</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">250 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#"><img src="img/products/gum/ice-breaker-spearmint.jpg" alt="gum-ice-breaker-spearmint"></a>
+        <p class="paragraph-price-and-buy">Жувальна гумка Ice-Breaker Spearmint</p>
+        <div class="price-and-buy">
+          <div>
+            <p class="price">110 грн</p>
+          </div>
+          <div>
+            <button class="btn-buy">Купити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="container p-2">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>© Created by Volodymyr Prokopenko</p>
+        </div>
+        <div class="col-sm-6 text-right">
+          <p>All rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
